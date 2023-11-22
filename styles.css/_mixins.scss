@@ -1,0 +1,22 @@
+@mixin afrer_header_fon($f){
+  content: "";
+  position: absolute;
+  left: 50%;
+  top: 0;
+  width: 100vw;
+  height: 100%;
+  background-color: $f;
+  transform: translateX(-50%);
+  z-index: -1;
+}
+
+@mixin afrer_nav-user($f){
+  position: absolute;
+  content: "";
+  top: 50%;
+  right: -15px;
+  height: 16px;
+  width: 1px;
+  transform: translateY(-50%);
+  background-color: $f;
+}

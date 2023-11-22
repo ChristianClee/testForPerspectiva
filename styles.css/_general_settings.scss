@@ -1,0 +1,22 @@
+.wrapper{
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.container{
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.header{
+}
+
+.main{
+  flex: 1 0 10%;
+  background-color: rgba(62, 47, 47, 0.274);
+}
+
+.footer{
+
+}
