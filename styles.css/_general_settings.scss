@@ -2,19 +2,28 @@
   min-height: 100vh;
   display: flex;
   flex-direction: column;
+  overflow-x: hidden;
 }
 
 .container{
   max-width: 1200px;
   margin: 0 auto;
 }
+.container_2{
+  width: 63%;
+  margin: 0 auto;
+}
 
 .header{
+  position: relative;
+  z-index: 2;
 }
+
 
 .main{
   flex: 1 0 10%;
-  background-color: rgba(62, 47, 47, 0.274);
+  background-color: rgba(255, 255, 255);
+  z-index: 1;
 }
 
 .footer{

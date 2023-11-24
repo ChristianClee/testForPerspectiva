@@ -159,11 +159,10 @@
 
 
 
-
-
 .header__nav-goods{
   position: relative;
   height: 41.5px;
+  z-index: 22;
   &::after{
     @include afrer_header_fon($bg_four_color);
   }
@@ -193,6 +192,7 @@
 .pop-up{
   display: none;
   position: absolute;
+   z-index: 20;
   background-color: $bg_four_color;
   // bottom:  generated in scriptOne.js
   left: 0;
@@ -212,7 +212,6 @@
     align-items: center;
     justify-content: center;
     padding: 15px;
-    text-transform: capitalize;
     color: $bg_two_color;
   }
   & a:hover {
@@ -232,6 +231,7 @@
   height: 41.5px;
   background: transparent;
   padding: 0 10px 0 20px;
+ 
   & svg{
     fill: $bg_one_color;
   }

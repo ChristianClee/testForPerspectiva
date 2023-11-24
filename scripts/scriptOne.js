@@ -10,8 +10,6 @@ class PositionPopUp{
     this.three.onmouseenter = () => this.getSizeBottomPopUp(this.three)
     this.four.onmouseenter = () => this.getSizeBottomPopUp(this.four)
 
-
-
     this.getSizeWidth(this.one)
     this.getSizeWidth(this.two)
     this.getSizeWidth(this.three)
@@ -22,11 +20,10 @@ class PositionPopUp{
     setTimeout(() => {
       const popUp = elem.querySelector(".pop-up")
       const heightSize = popUp.getBoundingClientRect().height
-      console.log(heightSize)
+      // console.log(heightSize)
       popUp.style.bottom = `${heightSize * -1}px`
     },30)
   }
-
   getSizeWidth(elem) {
     const elemsA = elem.querySelectorAll(".pop-up a")
     const widthSize = elem.getBoundingClientRect().width
@@ -35,10 +32,7 @@ class PositionPopUp{
       else {i.style.width = `${widthSize}px`}
       }
       )
-  }
-  
-
-
+  } 
 }
 
 const li = new PositionPopUp("nav-li-one", "nav-li-two", "nav-li-three", "nav-li-four")
